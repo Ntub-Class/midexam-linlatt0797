@@ -4,11 +4,11 @@
 // 輸入說明: 輸入長度為3，開頭不為0的字串，轉換數字請自行處理
 // 輸出說明: 請直接console.log出是否合法
 
-let checkId = function (id: string) {
+// let checkId = function (id: string) {
 
-}
+// }
 
-checkId('425') // 不合法
-checkId('355') // 合法
-checkId('754') // 不合法
-checkId('100') // 合法
+// checkId('425') // 不合法
+// checkId('355') // 合法
+// checkId('754') // 不合法
+// checkId('100') // 合法

@@ -4,3 +4,54 @@
 // Bird class說明: 請複寫父類別的eat方法，呼叫Bird的eat方法時必須先印出 I override it，
 //  然後再呼叫父類別的eat 輸出 I'm {name} , I can eat~~
 // 最後請建立一個Bird實體，並呼叫eat跟fly方法
+
+class Animal {
+    constructor(
+        public name: string) {
+    }
+
+    eat() {
+        console.log(this.name, 'I can {name},I can eat~~');
+    }
+}
+
+class Bird1 extends Animal {
+
+    constructor(name: string, public color: string) {
+        super(name)
+    }
+
+    fly(){
+        console.log('I can fly');
+    }
+
+    eat(){
+        super.eat();
+        console.log('I override it');
+    }
+
+}
+
+class Bird2 extends Animal {
+
+    constructor(name: string, public color: string) {
+        super(name)
+    }
+
+    fly(){
+        console.log('I can fly');
+    }
+
+    eat(){
+        super.eat();
+        console.log('I override it');
+    }
+
+}
+
+let bird1 = new Bird1('bird1', 'black');
+let bird2 = new Bird2('bird2', 'white');
+
+
+bird1.eat()
+bird2.eat()
