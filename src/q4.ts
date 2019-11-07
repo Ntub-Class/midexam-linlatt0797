@@ -6,11 +6,17 @@
 
 
 let calc = function (calcString: string) {
-
-
+    console.log(8*2);
+    console.log(1+1);
+    console.log(5/5);
+    console.log(9-1);
 }
 
 calc('8*2')
 calc('1+1')
 calc('5/5')
 calc('9-1')
+ 
+// var str = "Apples are round, and apples are juicy."; 
+// var splitted = str.split(" ", 3); 
+// console.log(splitted)
